@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
+#include <SDL2/SDL_image.h>
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -55,31 +55,31 @@ SDL_Surface* loadSurface(char* path)
 
 bool loadMedia()
 {
-    gKeyPressSurfaces[KEY_PRESS_SURFACE_DEFAULT] = loadSurface("/Users/nsm/src/github/sdl-tutorials/SDL04/SDL04/press.bmp");
+    gKeyPressSurfaces[KEY_PRESS_SURFACE_DEFAULT] = loadSurface("press.bmp");
     if (gKeyPressSurfaces[KEY_PRESS_SURFACE_DEFAULT] == NULL) {
         printf("Failed to load default image!\n");
         return false;
     }
     
-    gKeyPressSurfaces[KEY_PRESS_SURFACE_UP] = loadSurface("/Users/nsm/src/github/sdl-tutorials/SDL04/SDL04/up.bmp");
+    gKeyPressSurfaces[KEY_PRESS_SURFACE_UP] = loadSurface("up.bmp");
     if (gKeyPressSurfaces[KEY_PRESS_SURFACE_UP] == NULL) {
         printf("Failed to load up image!\n");
         return false;
     }
     
-    gKeyPressSurfaces[KEY_PRESS_SURFACE_DOWN] = loadSurface("/Users/nsm/src/github/sdl-tutorials/SDL04/SDL04/down.bmp");
+    gKeyPressSurfaces[KEY_PRESS_SURFACE_DOWN] = loadSurface("down.bmp");
     if (gKeyPressSurfaces[KEY_PRESS_SURFACE_DOWN] == NULL) {
         printf("Failed to load down image!\n");
         return false;
     }
     
-    gKeyPressSurfaces[KEY_PRESS_SURFACE_LEFT] = loadSurface("/Users/nsm/src/github/sdl-tutorials/SDL04/SDL04/left.bmp");
+    gKeyPressSurfaces[KEY_PRESS_SURFACE_LEFT] = loadSurface("left.bmp");
     if (gKeyPressSurfaces[KEY_PRESS_SURFACE_LEFT] == NULL) {
         printf("Failed to load left image!\n");
         return false;
     }
     
-    gKeyPressSurfaces[KEY_PRESS_SURFACE_RIGHT] = loadSurface("/Users/nsm/src/github/sdl-tutorials/SDL04/SDL04/right.bmp");
+    gKeyPressSurfaces[KEY_PRESS_SURFACE_RIGHT] = loadSurface("right.bmp");
     if (gKeyPressSurfaces[KEY_PRESS_SURFACE_RIGHT] == NULL) {
         printf("Failed to load right image!\n");
         return false;
